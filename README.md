@@ -22,9 +22,8 @@ All of the below patches remain unaltered and unchanged from the default version
   - This can also be set with ``SET SoundSoftwareChannels "64"`` in the Config.wtf file in your WoW directory, but this patcher changes the default value so that it survives Config.wtf deletions.
   - Values above 64 have been reported to cause crashes. If you run into performance issues, try decreasing this setting further.
 - **Farclip (max render distance) increase**
-  - Farclip is changed with ``SET farclip "777"`` in the Config.wtf file in your WoW directory (777 is the default maximum).
-  - This patch allows up to 10000, but this may cause crashes. Enabling the Large Address Aware patch (enabled by default) may help reduce crashing.
-- **Frilldistance (max grass render distance) increase**
+  - Farclip is changed with ``SET farclip "777"`` in the Config.wtf file in your WoW directory (777 is the default maximum, recommended not to exceed 4000 at most due to vanilla client limitations).
+  - **Frilldistance (max grass render distance) increase**
   - Frilldistance is set to a default of 300 when using vanilla-tweaks and is the maximum recommended value for this setting.
   - Frill density (grass density) is changed with ``SET frilldensity 64`` in the Config.wtf file in your WoW directory. Please note that 256 is the maximum recommended value for this setting therefore 64 is used as an example for improved performance.
   - It is not recommended to go beyond these values as they has a significant performance impact even on modern hardware.
